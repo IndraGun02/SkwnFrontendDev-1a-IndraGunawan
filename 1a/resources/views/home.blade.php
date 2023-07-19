@@ -17,6 +17,7 @@
         <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
         <link href="css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 
     <body>
@@ -50,7 +51,7 @@
                         <nav class="navbar navbar-light bg-light">
                             <form class="container-fluid justify-content-start">
                                 <button class="custom-button me-2" type="button">Sign Up</button>
-                                <button class="custom-buttonn" type="button"><i class="bi bi-bag"></i></button>
+                                <button class="custom-buttonn" type="button"><i class="bi bi-handbag"></i></button>
                             </form>
                           </nav>
                     </div>
@@ -60,8 +61,73 @@
         </div>
 
         {{-- Display --}}
-        <div>
+        <div class="container">
+            <!-- Kolom kiri -->
+            <div class="col-left">
+                <h1 class="fw-bold">The kind of</h1>
+                <h1 class="fw-bold"><span class="colored-text"> furniture</span> you have</h1>
+                <h1 class="fw-bold">been lookning for</h1>
+                <button class="button1" type="button"><i class="bi bi-search"></i> SEARCH CATALOG</button>
+                <button class="button2" type="button"><i class="bi bi-play-circle"></i> WATCH VIDEOS</button>
+            </div>
 
+            <!-- Kolom kanan -->
+            <div class="col-right">
+              <!-- Ganti URL gambar di bawah ini dengan URL gambar yang Anda inginkan -->
+                <img src="{{ url('img/sofa.jpeg')}}" alt="...">
+                <button class="button-top">$329</button>
+                <p class="text">Posht Sofa</p>
+                <button class="button-bottom">VIEW DETAILS <i class="bi bi-chevron-right"></i></button>
+            </div>
         </div>
+
+        {{-- Why Choose Us? --}}
+        <div class="main-container">
+            <!-- Teks pertama -->
+            <div class="text-1">
+                <h6>WHY CHOOSE US?</h6>
+            </div>
+            <!-- Teks kedua -->
+            <div class="text-2">
+                <p class="fw-bold">We care about details and the quality of our product</p>
+            </div>
+            <!-- Kolom pertama -->
+            <div class="column-container">
+                <div class="column">
+                    <div class="Features">
+                        <div class="IconFrame" >
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <div class="wcu-contents">
+                            <p>MANUFACTURED WITH QUALITY MATERIALS</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Kolom kedua -->
+            <div class="column">
+                <div class="Features">
+                    <div class="IconFrame">
+                        <i class="fa-sharp fa-solid fa-5"></i>
+                    </div>
+                    <div class="wcu-contents">
+                        <p>5 YEARS OF WARRANTY FOR EACH PROFUCT</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Kolom ketiga -->
+            <div class="column">
+                <div class="Features">
+                    <div class="IconFrame">
+                        <i class="bi bi-bag"></i>
+                    </div>
+                    <div class="wcu-contents">
+                        <p>20 YEARS OF EXPERTISE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{--Partner--}}
+
     </body>
 </html>
