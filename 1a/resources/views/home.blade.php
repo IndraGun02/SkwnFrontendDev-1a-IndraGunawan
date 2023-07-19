@@ -275,8 +275,54 @@
             <p class="deals-title">LIMITED DEALS</p>
             <p class="deals-text">Become a member and get 10% off of your first purchase</p>
         </div>
-        <div>
+        <div class="deals-email">
+            <div class="col">
+                <form action="#">
+                    @csrf
+                    <div class="inputfiled">
+                        <input type="text-field" class="input" required placeholder="Enter your email here">
+                        <button type="button" class="mail-button"><i class="bi bi-envelope"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
+    {{--Footer--}}
+    <div class="footer">
+        <div class="row">
+            <div class="col">
+                <div class="footer-img">
+                    <img src="{{ url('img/logo.jpeg')}}" alt="...">
+                </div>
+                <div class="footer-text">
+                    <p>Dekoor is a furniture company created to fulfill the needs of family with aesthetic feeling in their furniture. Always pay attention to details and give clear communication for the customers. Priority of ur design is comfortability.</p>
+                    <p>Copyright 2022 Dekoor</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-container">
+                    <div class="row row-cols-1 row-cols-lg-3">
+                        <div class="col">Support</div>
+                        <div class="col">Social Media</div>
+                        <div class="col">About Us</div>
+                    </div>
+                    <div class="row2 row row-cols-4 row-cols-lg-3">
+                        <div class="col">FAQ</div>
+                        <div class="col">Instagram</div>
+                        <div class="col">Our Story</div>
+                        <div class="col">Shipping & Returns</div>
+                        <div class="col">Facebook</div>
+                        <div class="col">Designer</div>
+                        <div class="col">Care guide</div>
+                        <div class="col">Twitter</div>
+                        <div class="col">Craftmanship</div>
+                        <div class="col">Redeem warranty</div>
+                        <div class="col">Tiktok</div>
+                        <div class="col">Sustainability</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
