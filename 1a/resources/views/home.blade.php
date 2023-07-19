@@ -82,7 +82,7 @@
         </div>
 
         {{-- Why Choose Us? --}}
-        <div class="main-container">
+        <div class="wcu-container">
             <!-- Teks pertama -->
             <div class="text-1">
                 <h6>WHY CHOOSE US?</h6>
